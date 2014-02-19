@@ -26,13 +26,16 @@ Veewee::Session.declare({
   :shutdown_cmd => "/sbin/halt -h -p",
   :postinstall_files => [
     "base.sh",
-    #"chef.sh",
     "puppet.sh",
     "vagrant.sh",
     "virtualbox.sh",
-    #"vmfusion.sh",
+    "update.sh",
+    "rubygems.sh",
+    "librarian-puppet.sh",
+    "libreplication.sh",
     "cleanup.sh",
-    "zerodisk.sh"
+    "zerodisk.sh",
+    "centalt.sh"
   ],
   :postinstall_timeout => 10000
 })
