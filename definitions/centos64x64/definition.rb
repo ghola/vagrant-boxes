@@ -30,12 +30,10 @@ Veewee::Session.declare({
     "vagrant.sh",
     "virtualbox.sh",
     "update.sh",
-    "rubygems.sh",
-    "librarian-puppet.sh",
-    "libreplication.sh",
+    "install-additions.sh",
+#	"centalt.sh",
     "cleanup.sh",
-    "zerodisk.sh",
-    "centalt.sh"
+    "zerodisk.sh"
   ],
   :postinstall_timeout => 10000
 })

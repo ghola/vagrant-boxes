@@ -1,0 +1,8 @@
+---
+:backends: json
+:json:
+    :datadir: '/home/veewee/vagrant-boxes/additions/puppet/apply/hieradata'
+:hierarchy:
+    - common
+:logger: console
+:merge_behavior: deeper

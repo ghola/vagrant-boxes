@@ -1,0 +1,167 @@
+{
+	"git": {
+        "system-config": {
+            "core.autocrlf": {
+                "value": "input"
+            },
+            "core.filemode": {
+                "value": "false"
+            }
+        }
+    },
+    "apache": {
+        "modules": [
+            "ssl",
+            "php"
+        ],
+        "mpm_module": "prefork"
+    },
+    "iptables": {
+        "http/80": {
+            "port": "80",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "http/443": {
+            "port": "443",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "rabbitmq-web/15672": {
+            "port": "15672",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "amqp/5672": {
+            "port": "5672",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "ftp/21": {
+            "port": "21",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "ftp-passive/3000:3100": {
+            "port": "3000:3100",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "couchbase-web-and-api/8091:8092": {
+            "port": "8091:8092",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "memcached/11222": {
+            "port": "11222",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "supervisord/9001": {
+            "port": "9001",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        }
+    },
+    "php": {
+        "modules": {
+            "php": {
+                "cli": {},
+                "common": {},
+                "gd": {},
+                "mcrypt": {},
+                "bcmath": {},
+                "gmp": {},
+                "mbstring": {},
+                "mysqlnd": {}
+            },
+            "pecl": {
+                "oauth": {
+                    "use_package": "no"
+                },
+                "geoip": {
+                    "use_package": "no"
+                },
+                "imagick": {
+                    "use_package": "no"
+                },
+                "amqp": {
+                    "use_package": "no"
+                },
+                "xdebug": {
+                    "use_package": "no"
+                },
+                "couchbase": {
+                    "use_package": "no"
+                },
+                "pecl-memcached": {
+                    "use_package": "yes"
+                }
+            },
+            "pear": {
+                "PHPUnit": {
+                    "repository": "pear.phpunit.de",
+                    "alldeps": true,
+                    "use_package": "no"
+                },
+                "phing": {
+                    "repository": "pear.phing.info",
+                    "alldeps": true,
+                    "use_package": "no"
+                }
+            },
+            "file": {
+                "binlog": {
+                    "source": "/home/veewee/vagrant-boxes/additions/bundled-binaries/mysqlbinlog.so"
+                }
+            }
+        },
+        "composer": true,
+        "ini": {
+            "display_errors": "On",
+            "error_reporting": "E_ALL",
+            "post_max_size": "400M",
+            "memory_limit": "350M",
+            "max_file_uploads": "400M",
+            "date.timezone": "America/New_York",
+            "xdebug.default_enable": "1",
+            "xdebug.remote_autostart": "0",
+            "xdebug.remote_connect_back": "1",
+            "xdebug.remote_enable": "1",
+            "xdebug.remote_handler": "dbgp",
+            "xdebug.remote_port": "9000"
+        }
+    },
+    "mysql": {
+        "root_password": "123"
+    },
+    "couchbase": {
+        "size": "256",
+        "user": "root",
+        "password": "123456",
+        "edition": "community",
+        "clientlibs": {
+            "php": {}
+        }
+    },
+    "memcached": {
+        "cachesize": "50",
+        "port": "11222"
+    },
+    "rubygems": [
+        "compass",
+        "compass-h5bp"
+    ],
+    "env": {
+        "APPLICATION_ENV": {
+            "content": "development"
+        }
+    },
+    "vsftpd::anonymous_enable": "NO",
+    "vsftpd::pasv_min_port": "3000",
+    "vsftpd::pasv_max_port": "3100",
+    "vsftpd::chroot_local_user": "YES",
+    "vsftpd::local_umask": "002",
+    "vsftpd::allow_writeable_chroot": "YES",
+    "vsftpd::allow_local": "YES"
+}
