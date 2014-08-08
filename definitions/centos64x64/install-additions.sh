@@ -32,6 +32,14 @@ rpm -Uvh $VEEWEE_DIR/vagrant-boxes/additions/bundled-binaries/rpms/httpd-tools-2
 rpm -Uvh $VEEWEE_DIR/vagrant-boxes/additions/bundled-binaries/rpms/httpd-2.2.22-2.2.x86_64.rpm
 rpm -Uvh $VEEWEE_DIR/vagrant-boxes/additions/bundled-binaries/rpms/mod_ssl-2.2.22-2.2.x86_64.rpm
 
+# Install pdf generation and merging tools
+## Wkhtmltopdf
+yum -y install http://downloads.sourceforge.net/project/wkhtmltopdf/0.12.1/wkhtmltox-0.12.1_linux-centos6-amd64.rpm
+
+## PDF merge tools
+yum -y install pdfmerge pdfshuffler pdfjam pdf-tools 
+yum -y install http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk-2.02-1.el6.x86_64.rpm
+
 # Install keychain for automated ssh key loading
 yum -y install keychain
 
