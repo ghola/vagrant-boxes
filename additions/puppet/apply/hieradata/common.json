@@ -73,7 +73,8 @@
                 "bcmath": {},
                 "gmp": {},
                 "mbstring": {},
-                "mysqlnd": {}
+                "mysqlnd": {},
+                "soap": {}
             },
             "pecl": {
                 "oauth": {
