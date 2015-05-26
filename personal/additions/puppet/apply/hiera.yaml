@@ -1,7 +1,7 @@
 ---
 :backends: json
 :json:
-    :datadir: '/home/veewee/vagrant-boxes/additions/puppet/apply/hieradata'
+    :datadir: '/home/veewee'
 :hierarchy:
     - common
 :logger: console

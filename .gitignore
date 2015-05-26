@@ -1,3 +1,12 @@
+# IDE generated files #
+#######################
+.settings
+.project
+.buildpath
+.idea
+
+# Compilation artifacts #
+#########################
 /iso
 *.box
 

@@ -1,0 +1,154 @@
+{
+    "provisionenv": "build",
+	"git": {
+        "system-config": {
+            "core.autocrlf": {
+                "value": "input"
+            },
+            "core.filemode": {
+                "value": "false"
+            }
+        }
+    },
+    "apache": {
+        "modules": [
+            "ssl",
+            "php"
+        ],
+        "mpm_module": "prefork"
+    },
+    "iptables": {
+        "http/80": {
+            "port": "80",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "http/443": {
+            "port": "443",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "rabbitmq-web/15672": {
+            "protocol": "tcp",
+            "port": "15672",
+            "target": "ACCEPT"
+        },
+        "amqp/5672": {
+            "port": "5672",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "ftp/21": {
+            "port": "21",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "ftp-passive/3000:3100": {
+            "port": "3000:3100",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "memcached/11222": {
+            "port": "11222",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "supervisord/9001": {
+            "port": "9001",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "postgresql/5432": {
+            "port": "5432",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        }
+    },
+    "php": {
+        "modules": {
+            "php": {
+                "cli": {},
+                "common": {},
+                "gd": {},
+                "mcrypt": {},
+                "bcmath": {},
+                "gmp": {},
+                "mbstring": {},
+                "mysqlnd": {},
+                "soap": {},
+                "pgsql": {}
+            },
+            "pecl": {
+                "oauth": {
+                    "use_package": "no"
+                },
+                "geoip": {
+                    "use_package": "no"
+                },
+                "imagick": {
+                    "use_package": "no"
+                },
+                "amqp": {
+                    "use_package": "no"
+                },
+                "xdebug": {
+                    "use_package": "no"
+                },
+                "pecl-memcached": {
+                    "use_package": "yes"
+                }
+            },
+            "pear": {
+                "phing": {
+                    "repository": "pear.phing.info",
+                    "alldeps": true,
+                    "use_package": "no"
+                }
+            }
+        },
+        "composer": true,
+        "ini": {
+            "display_errors": "On",
+            "error_reporting": "E_ALL",
+            "post_max_size": "400M",
+            "memory_limit": "350M",
+            "max_file_uploads": "400M",
+            "date.timezone": "America/New_York",
+            "xdebug.default_enable": "1",
+            "xdebug.remote_autostart": "0",
+            "xdebug.remote_connect_back": "1",
+            "xdebug.remote_enable": "1",
+            "xdebug.remote_handler": "dbgp",
+            "xdebug.remote_port": "9000"
+        }
+    },
+    "mysql": {
+        "root_password": "123"
+    },
+    "postgresql::server::postgres_password": "123",
+    "postgresql::server::ipv4acls": [
+        "host all postgres 192.168.0.0/24 md5",
+        "host all all 127.0.0.1/32 md5",
+        "local all all md5",
+        "local all all peer"
+    ],
+    "postgresql::server::ipv6acls": [
+        "host all all ::1/128 md5"
+    ],
+    "rubygems": [
+        "compass",
+        "compass-h5bp"
+    ],
+    "env": {
+        "APPLICATION_ENV": {
+            "content": "development"
+        }
+    },
+    "vsftpd::anonymous_enable": "NO",
+    "vsftpd::pasv_min_port": "3000",
+    "vsftpd::pasv_max_port": "3100",
+    "vsftpd::chroot_local_user": "YES",
+    "vsftpd::local_umask": "002",
+    "vsftpd::allow_writeable_chroot": "YES",
+    "vsftpd::allow_local": "YES"
+}

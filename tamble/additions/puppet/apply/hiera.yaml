@@ -1,0 +1,8 @@
+---
+:backends: json
+:json:
+    :datadir: '/home/veewee'
+:hierarchy:
+    - common
+:logger: console
+:merge_behavior: deeper
