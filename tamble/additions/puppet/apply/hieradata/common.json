@@ -1,5 +1,6 @@
 {
-	"git": {
+    "provisionenv": "build",
+    "git": {
         "system-config": {
             "core.autocrlf": {
                 "value": "input"
@@ -28,8 +29,8 @@
             "target": "ACCEPT"
         },
         "rabbitmq-web/15672": {
-            "port": "15672",
             "protocol": "tcp",
+            "port": "15672",
             "target": "ACCEPT"
         },
         "amqp/5672": {
@@ -59,6 +60,11 @@
         },
         "supervisord/9001": {
             "port": "9001",
+            "protocol": "tcp",
+            "target": "ACCEPT"
+        },
+        "postgresql/5432": {
+            "port": "5432",
             "protocol": "tcp",
             "target": "ACCEPT"
         }
@@ -92,19 +98,11 @@
                 "xdebug": {
                     "use_package": "no"
                 },
-                "couchbase": {
-                    "use_package": "no"
-                },
                 "pecl-memcached": {
                     "use_package": "yes"
                 }
             },
             "pear": {
-                "PHPUnit": {
-                    "repository": "pear.phpunit.de",
-                    "alldeps": true,
-                    "use_package": "no"
-                },
                 "phing": {
                     "repository": "pear.phing.info",
                     "alldeps": true,
@@ -113,7 +111,7 @@
             },
             "file": {
                 "binlog": {
-                    "source": "/home/veewee/vagrant-boxes/additions/bundled-binaries/mysqlbinlog.so"
+                    "source": "/home/veewee/mysqlbinlog.so"
                 }
             }
         },
