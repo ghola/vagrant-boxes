@@ -35,6 +35,7 @@ Veewee::Session.declare({
       definition.box.scp('../additions/bundled-binaries/rpms/httpd-tools-2.2.22-2.2.x86_64.rpm', '/home/veewee/httpd-tools-2.2.22-2.2.x86_64.rpm')
       definition.box.scp('../additions/bundled-binaries/rpms/mod_ssl-2.2.22-2.2.x86_64.rpm', '/home/veewee/mod_ssl-2.2.22-2.2.x86_64.rpm')
       definition.box.scp('../additions/bundled-binaries/rpms/vsftpd-3.0.2-1.el6.x86_64.rpm', '/home/veewee/vsftpd-3.0.2-1.el6.x86_64.rpm')
+      definition.box.scp('../additions/bundled-binaries/rpms/wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm', '/home/veewee/wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm')
       definition.box.scp('../additions/bundled-binaries/mysqlbinlog.so', '/home/veewee/mysqlbinlog.so')
 
       definition.box.scp('additions/puppet/apply/hiera.yaml', '/home/veewee/hiera.yaml')
