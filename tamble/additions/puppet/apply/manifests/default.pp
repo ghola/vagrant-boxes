@@ -1,3 +1,4 @@
+class { "vmbuildhelper": }
 class { "vmbuildhelper::ntp": }
 class { "vmbuildhelper::git": }
 class { "vmbuildhelper::yum": }
@@ -16,3 +17,4 @@ class { "vmbuildhelper::nfs": }
 class { "vmbuildhelper::supervisord": }
 class { "vmbuildhelper::cron": }
 class { "vmbuildhelper::execs": }
+class { "vmbuildhelper::couchbase": }
