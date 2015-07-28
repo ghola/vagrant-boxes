@@ -1,3 +1,4 @@
+class { "vmbuildhelper": }
 class { "vmbuildhelper::ntp": }
 class { "vmbuildhelper::git": }
 class { "vmbuildhelper::yum": }

@@ -79,22 +79,25 @@
                 "pgsql": {}
             },
             "pecl": {
-                "oauth": {
-                    "use_package": "no"
+                "pecl-oauth": {
+                    "use_package": "yes"
                 },
-                "geoip": {
-                    "use_package": "no"
+                "pecl-geoip": {
+                    "use_package": "yes"
                 },
-                "imagick": {
-                    "use_package": "no"
+                "pecl-imagick": {
+                    "use_package": "yes"
                 },
-                "amqp": {
-                    "use_package": "no"
+                "pecl-amqp": {
+                    "use_package": "yes"
                 },
-                "xdebug": {
-                    "use_package": "no"
+                "pecl-xdebug": {
+                    "use_package": "yes"
                 },
                 "pecl-memcached": {
+                    "use_package": "yes"
+                },
+                "pecl-zip": {
                     "use_package": "yes"
                 }
             },
