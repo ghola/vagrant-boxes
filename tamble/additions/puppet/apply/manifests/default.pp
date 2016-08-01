@@ -2,7 +2,6 @@ class { "vmbuildhelper": }
 class { "vmbuildhelper::ntp": }
 class { "vmbuildhelper::git": }
 class { "vmbuildhelper::yum": }
-class { "vmbuildhelper::dnsresolver": }
 class { "vmbuildhelper::apache": }
 class { "vmbuildhelper::firewall": }
 class { "vmbuildhelper::php": }

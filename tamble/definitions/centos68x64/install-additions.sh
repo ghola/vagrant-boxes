@@ -30,7 +30,4 @@ yum -y install $VEEWEE_DIR/httpd-tools-2.2.22-2.2.x86_64.rpm
 yum -y install $VEEWEE_DIR/httpd-2.2.22-2.2.x86_64.rpm
 yum -y install $VEEWEE_DIR/mod_ssl-2.2.22-2.2.x86_64.rpm
 
-# Install libreplication
-cp $VEEWEE_DIR/libreplication.* /usr/lib64/
-
 cd $CWD

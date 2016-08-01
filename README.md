@@ -7,7 +7,7 @@ There are two main directories: personal and tamble. To build boxes you need to 
 ```sh
 # Required only if you want to define a new vbox following a template
 # The alternative is to just copy an existing definition directory and make changes to it
-$ veewee vbox define centos66x64 CentOS-6.4-x86_64-minimal
+$ veewee vbox define centos66x64 CentOS-6.6-x86_64-minimal
 
 # Required on each subsequent build
 $ veewee vbox build centos66x64
