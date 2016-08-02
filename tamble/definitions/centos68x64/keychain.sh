@@ -1,5 +1,5 @@
 # Install keychain for automated ssh key loading
-yum -y install keychain
+yum -y install /home/veewee/keychain-2.7.0-1.el6.rf.noarch.rpm
 
 # Set keychain to load ssh keys
 cat > /etc/profile.d/keychain.sh << EOM
