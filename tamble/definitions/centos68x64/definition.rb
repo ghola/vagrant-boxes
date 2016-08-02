@@ -33,6 +33,7 @@ Veewee::Session.declare({
       definition.box.scp('../additions/bundled-binaries/rpms/vsftpd-3.0.2-1.el6.x86_64.rpm', '/home/veewee/vsftpd-3.0.2-1.el6.x86_64.rpm')
       definition.box.scp('../additions/bundled-binaries/rpms/rabbitmq-server-3.3.4-1.noarch.rpm', '/home/veewee/rabbitmq-server-3.3.4-1.noarch.rpm')
       definition.box.scp('../additions/bundled-binaries/rpms/wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm', '/home/veewee/wkhtmltox-0.12.2.1_linux-centos6-amd64.rpm')
+      definition.box.scp('../additions/bundled-binaries/rpms/keychain-2.7.0-1.el6.rf.noarch.rpm', '/home/veewee/keychain-2.7.0-1.el6.rf.noarch.rpm')
 
       definition.box.scp('additions/puppet/apply/hiera.yaml', '/home/veewee/hiera.yaml')
       definition.box.scp('additions/puppet/apply/hieradata/common.json', '/home/veewee/common.json')
