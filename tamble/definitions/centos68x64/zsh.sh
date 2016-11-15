@@ -13,6 +13,7 @@ build_prompt() {
   prompt_end
 }
 EOM
+sed -i '/^# DISABLE_AUTO_UPDATE/s/^# //' ~/.zshrc
 
 su - vagrant -c 'sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"'
 su - vagrant -c 'sed -i -- 's/robbyrussell/agnoster/g' ~/.zshrc'
@@ -28,5 +29,6 @@ build_prompt() {
   prompt_end
 }
 EOM
+sed -i '/^# DISABLE_AUTO_UPDATE/s/^# //' /home/vagrant/.zshrc
 
 echo "source /etc/profile" >> /etc/zprofile
