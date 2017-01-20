@@ -12,8 +12,7 @@
     },
     "apache": {
         "modules": [
-            "ssl",
-            "php"
+            "ssl"
         ],
         "mpm_module": "prefork"
     },
@@ -75,8 +74,7 @@
                 "gmp": {},
                 "mbstring": {},
                 "mysqlnd": {},
-                "soap": {},
-                "pgsql": {}
+                "soap": {}
             },
             "pecl": {
                 "pecl-oauth": {
@@ -89,6 +87,9 @@
                     "use_package": "yes"
                 },
                 "pecl-amqp": {
+                    "use_package": "yes"
+                },
+                "pecl-zmq": {
                     "use_package": "yes"
                 },
                 "pecl-xdebug": {
@@ -128,20 +129,6 @@
     "mysql": {
         "root_password": "123"
     },
-    "postgresql::server::postgres_password": "123",
-    "postgresql::server::ipv4acls": [
-        "host all postgres 192.168.0.0/24 md5",
-        "host all all 127.0.0.1/32 md5",
-        "local all all md5",
-        "local all all peer"
-    ],
-    "postgresql::server::ipv6acls": [
-        "host all all ::1/128 md5"
-    ],
-    "rubygems": [
-        "compass",
-        "compass-h5bp"
-    ],
     "env": {
         "APPLICATION_ENV": {
             "content": "development"

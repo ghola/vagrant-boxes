@@ -1,5 +1,5 @@
 forge "http://forge.puppetlabs.com"
-mod 'puppetlabs-apache', '1.4.1'
+mod 'puppetlabs-apache', '1.11.0'
 mod 'puppetlabs-apt', '1.8.0'
 mod 'puppetlabs-postgresql', '4.2.0'
 mod 'justicel-phpmyadmin', :git => 'git://github.com/ghola/puppet-phpmyadmin.git', :ref => '7e1c384c6c254e8bbb670c0103dd66192db60431'
