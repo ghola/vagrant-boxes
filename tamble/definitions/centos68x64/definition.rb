@@ -55,6 +55,7 @@ Veewee::Session.declare({
     "keychain.sh",
     "pdf-tools.sh",
     "zsh.sh",
+    "r.sh",
     "cleanup.sh",
     "zerodisk.sh"
   ],
