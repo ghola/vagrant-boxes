@@ -13,7 +13,8 @@
     "apache": {
         "modules": [
             "ssl",
-            "php"
+            "php",
+            "headers"
         ],
         "mpm_module": "prefork"
     },

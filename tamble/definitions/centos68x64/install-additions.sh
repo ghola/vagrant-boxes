@@ -30,4 +30,10 @@ yum -y install $VEEWEE_DIR/httpd-tools-2.2.22-2.2.x86_64.rpm
 yum -y install $VEEWEE_DIR/httpd-2.2.22-2.2.x86_64.rpm
 yum -y install $VEEWEE_DIR/mod_ssl-2.2.22-2.2.x86_64.rpm
 
+wget http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz
+gunzip GeoLite2-City.mmdb.gz
+mkdir -p /usr/share/GeoIP/
+mv GeoLite2-City.mmdb /usr/share/GeoIP/GeoLite2-City.mmdb
+rm -f GeoLite2-City.mmdb.gz
+
 cd $CWD

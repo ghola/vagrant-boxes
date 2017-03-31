@@ -1,6 +1,6 @@
 yum -y install R
 
-wget https://cran.r-project.org/src/contrib/Rcpp_0.12.9.tar.gz
+wget https://cran.r-project.org/src/contrib/Archive/Rcpp/Rcpp_0.12.9.tar.gz
 /usr/bin/R CMD INSTALL Rcpp_0.12.9.tar.gz
 
 wget https://cran.r-project.org/src/contrib/Archive/RcppArmadillo/RcppArmadillo_0.5.600.2.0.tar.gz
@@ -27,5 +27,5 @@ EOM
 cat > /home/vagrant/rserve.r << EOM
 library(Rserve)
 library("forecast")
-run.Rserve(config.file = "/etc/Rserve.conf")
+run.Rserve(config.file = "/etc/Rserv.conf")
 EOM
