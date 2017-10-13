@@ -1,6 +1,6 @@
 Veewee::Session.declare({
-  :cpu_count => '1',
-  :memory_size=> '1024',
+  :cpu_count => '2',
+  :memory_size=> '2048',
   :disk_size => '10140',
   :disk_format => 'VDI',
   :hostiocache => 'off',
@@ -56,6 +56,7 @@ Veewee::Session.declare({
     "pdf-tools.sh",
     "zsh.sh",
     "r.sh",
+    "bindfs.sh",
     "cleanup.sh",
     "zerodisk.sh"
   ],

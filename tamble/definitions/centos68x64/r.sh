@@ -1,4 +1,4 @@
-yum -y install R
+yum -y install R libcurl-devel
 
 wget https://cran.r-project.org/src/contrib/Archive/Rcpp/Rcpp_0.12.9.tar.gz
 /usr/bin/R CMD INSTALL Rcpp_0.12.9.tar.gz

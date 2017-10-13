@@ -107,8 +107,9 @@
                 "pecl-memcached": {
                     "use_package": "yes"
                 },
-                "pecl-couchbase": {
-                    "use_package": "yes"
+                "couchbase": {
+                    "use_package": "no",
+                    "version": "1.2.2"
                 },
                 "pecl-zip": {
                     "use_package": "yes"

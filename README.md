@@ -7,13 +7,13 @@ There are two main directories: personal and tamble. To build boxes you need to 
 ```sh
 # Required only if you want to define a new vbox following a template
 # The alternative is to just copy an existing definition directory and make changes to it
-$ veewee vbox define centos66x64 CentOS-6.6-x86_64-minimal
+$ veewee vbox define centos68x64 CentOS-6.8-x86_64-minimal
 
 # Required on each subsequent build
-$ veewee vbox build centos66x64
-$ veewee vbox validate centos66x64
+$ veewee vbox build centos68x64
+$ veewee vbox validate centos68x64
 # Eject the disks from the running VM and shutdown.
-$ vagrant package --base centos66x64 --output CentOS-6.6-x86_64-v20150526.box
+$ vagrant package --base centos68x64 --output CentOS-6.8-x86_64-v20150526.box
 ```
 
 ## Contents
